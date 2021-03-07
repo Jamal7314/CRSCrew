@@ -1,0 +1,756 @@
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	font-family: Verdana, Geneva, sans-serif;
+}
+.banner{
+
+	text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+.banner-text{
+	padding:200px 0 150px 0;
+}
+.banner-heading{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 75px;
+    font-weight: 700;
+    line-height: 100px;
+    margin-bottom: 30px;
+	color:#fff;
+}
+.banner-sub-heading{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 50px;
+	color:#fff;
+}
+
+.btn-banner{
+	
+	padding:5px 20px;
+	border-radius:10px;
+	font-weight:700;
+	line-height:1.5;
+	text-align:center;
+	color: white;
+	text-transform:uppercase;
+}
+
+@media (max-width:500px)
+{
+
+.banner-text{
+	padding:150px 0 150px 0;
+}
+.banner-heading{
+	font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.banner-sub-heading{
+	font-size: 10px;
+    font-weight: 200;
+    line-height: 10px;
+    margin-bottom: 40px;
+}
+
+}
+
+@media (max-width:768px){
+	.banner-text{
+	padding:150px 0 150px 0;
+}
+	.banner-sub-heading{
+	font-size: 23px;
+    font-weight: 200;
+    line-height: 23px;
+    margin-bottom: 40px;
+}
+}
+ 
+.ourServices{
+	padding: 100px 0px 60px;
+	height: auto;
+}
+
+.rowSetting{
+    margin: 80px 0px !important;
+}
+
+.rowSetting h3{
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 30px
+
+}
+
+.rowSetting p{
+	padding: 10px;
+	color: #6c757d !important;
+}
+
+.extradiv{
+	background: #fff;
+	border:medium none;
+	border-radius: 3px;
+	padding: 50px;
+	transition:0.3s;
+	text-align: center; 
+}
+
+.extradiv:hover{
+	box-shadow: 0 0 20px 0  rgba(0,0,0,0.3);
+	transform: translateY(-5px);
+}
+
+.aboutUs {
+	height: auto;
+}
+
+.LoginAndSignUp{
+	width : auto;
+	padding : 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.LoginAndSignUp h1{
+	text-transform: uppercase;
+	font-weight:500;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+
+.LoginAndSignUp label{
+	display: block;
+	font-size: 20px;
+}
+.LoginAndSignUp input[type = "text"],.LoginAndSignUp input[type = "password"]{
+	border:0;
+	background: none;
+	display: block;
+	margin:20px auto;
+	text-align: center;
+	border:2px solid #3498db;
+	padding : 14px 10px;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+.LoginAndSignUp input[type = "radio"]{
+	border:0;
+	cursor: pointer;
+	margin:10px auto;
+	text-align: left;
+	width:50px;
+	outline:none;
+	transition:0.25s;
+	background: none;
+}
+
+.LoginAndSignUp label[class = "type"]{
+	cursor: pointer;
+	display: inline;
+	opacity: 0.5;
+}
+
+.LoginAndSignUp input[type = "text"]:focus,.LoginAndSignUp input[type = "password"]:focus{
+	border-color:#2ecc71;
+}
+
+.LoginAndSignUp input[type = "Submit"],.LoginAndSignUp input[type = "reset"],.LoginAndSignUp input[type = "button"]{
+	border:0;
+	width:200px;
+	background: none;
+	margin:30px 10px;
+	border:2px solid #2ecc71;
+	padding : 14px 40px;
+	outline:none;
+	color:black;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+.LoginAndSignUp input[type = "Submit"]:hover,.LoginAndSignUp input[type = "reset"]:hover,.LoginAndSignUp input[type = "button"]:hover{
+	background: #2ecc71;
+	cursor: pointer;
+}
+
+.LoginAndSignUp .button{text-align: center;}
+
+.Main{
+	margin:10%;
+	text-align: center;
+}
+
+.Main{margin-top: 20%;}
+
+.Main #link .link{
+	display: inline-block;
+	width : 400px;
+	position: relative;
+	border-radius:24px;
+}
+
+.Main #link #text{
+	width : 100px;
+	padding: 10px;
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.Main #link .link input[type = "button"]{
+	width: 300px;
+	background: none;
+	margin:0px;
+	border:2px solid #2ecc71;
+	padding : 14px 40px;
+	outline:none;
+	color:black;
+	border-radius:24px;
+	cursor: pointer;
+}
+
+.Main #link .link input[type = "button"]:hover {background: #2ecc71;}
+
+
+.ManagerMain{
+	text-align: center;
+	padding: 10px;
+	margin-top:5%;
+	margin-bottom: 2%;
+}
+
+.createTester{
+	margin-top: 20px;
+	border-bottom: 1px solid white;
+	padding:10px;
+}
+
+.createTester h1{
+	color:black;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight:500;
+	border-bottom: 1px solid white;
+}
+
+.createTester label{
+	color:black;
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+.createTester input[type = "text"],.createTester input[type = "password"]{
+	border:0;
+	background: none;
+	margin:auto;
+	text-align: center;
+	border:2px solid #3498db;
+	color:black;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+
+.createTester label[class = "type"]{
+	cursor: pointer;
+	color:black;
+	display: inline;
+	opacity: 0.5;
+}
+
+.createTester input[type = "text"]:focus,.createTester input[type = "password"]:focus{
+	border-color:#2ecc71;
+}
+
+.createTester input[type = "Submit"],.createTester input[type = "reset"],.createTester input[type = "button"]{
+	border:0;
+	background: none;
+	margin:30px 10px;
+	border:2px solid #2ecc71;
+	padding : 14px 40px;
+	outline:none;
+	color:black;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+.createTester input[type = "Submit"]:hover,.createTester input[type = "reset"]:hover,.createTester input[type = "button"]:hover{
+	background: #2ecc71;
+	cursor: pointer;
+	text-align: center;
+}
+
+.createTester .button{
+	text-align: center;
+}
+
+.user{width:200px;
+	color:black;}
+
+.user span{padding : 14px 5px;}
+
+#RegisterTK h1 ,#ManageTK h1 , #RegisterTC h1{
+	color:black;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight:500;
+	border-bottom: 1px solid white;
+}
+
+#RegisterTK label ,#ManageTK label , #RegisterTC label{
+	color:black;
+	display: block;
+	font-size: 20px;
+}
+
+#RegisterTK input[type = "text"] , #ManageTK input[type="text"] , #RegisterTC input[type = "text"]{
+	border:0;
+	background: none;
+	display: block;
+	margin:20px auto;
+	text-align: center;
+	border:2px solid #3498db;
+	padding : 14px 10px;
+	width:200px;
+	outline:none;
+	color:black;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+#RegisterTK input[type = "text"]:focus , #ManageTK input[type = "text"]:focus ,#RegisterTC input[type = "text"]:focus{
+	width:280px;
+	border-color:#2ecc71;
+}
+
+ #RegisterTK input[type = "button"],#RegisterTK input[type = "reset"] , #RegisterTK input[type = "submit"],
+#ManageTK input[type = "button"] , #ManageTK input[type = "reset"] , #ManageTK input[type = "submit"],
+ #RegisterTC input[type = "button"],#RegisterTC input[type = "reset"] , #RegisterTC input[type = "submit"]{
+	border:0;
+	background: none;
+	margin:30px 10px;
+	border:2px solid #2ecc71;
+	padding : 14px 40px;
+	outline:none;
+	color:black;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+ #RegisterTK input[type = "button"]:hover,#RegisterTK input[type = "reset"]:hover,#RegisterTK input[type = "submit"]:hover,
+#ManageTK input[type = "button"]:hover,#ManageTK input[type = "reset"]:hover ,#ManageTK input[type = "submit"]:hover,
+ #RegisterTC input[type = "button"]:hover,#RegisterTC input[type = "reset"]:hover , #RegisterTC input[type = "submit"]:hover{
+	background: #2ecc71;
+	cursor: pointer;
+}
+
+
+.backToManager input[type="button"] , .back input[type="button"]{
+	background: none;
+	margin:10px 10px;
+	border:2px solid #2ecc71;
+	padding : 10px 40px;
+	outline:none;
+	color:black;
+	border-radius:12px;
+	transition:0.25s;
+}
+
+.backToManager input[type="button"]:hover , .back input[type="button"]:hover{
+	background: #2ecc71;
+	cursor: pointer;
+}
+
+.back{text-align: center;}
+
+#RegisterTK ,#ManageTK ,#RegisterTC{
+	text-align: center;
+	padding : 20px;
+}
+
+#RegisterTC{border-bottom: 1px solid white;}
+
+#RegisterTK ,#ManageTK{
+	position:relative;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+}
+#RegisterTK {display:block;}
+#ManageTK {display:none;}
+
+#Registerbtn{
+	color: black;
+	border: 1px solid #2ecc71;
+	border-radius: 100px 0px 0px 100px;
+}
+#Managebtn{
+	color: black;
+	border: 1px solid #2ecc71;
+	border-radius: 0px 100px 100px 0px;
+}
+
+#Registerbtn:hover , #Managebtn:hover{
+	background-color: #2ecc71;
+	box-shadow: 5px 5px 10px #2ecc71;
+	transition: 0.3s;
+}
+
+#Registerbtn:focus , #Managebtn:focus{
+	background-color: #2ecc71;
+	box-shadow: 5px 5px 10px #2ecc71;
+}
+
+.list{
+	border-top: 1px solid white;
+	text-align: center;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	height :20%;
+	padding : 40px;
+	top:70%;
+	background: none;
+}
+
+.backToManager{
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+
+.footerSection{
+	height: auto;
+	padding: 40px 0 20px 0;
+	position: relative;
+}
+.footerSection p{
+	color: white;
+}
+
+.footerSection h3 {
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 10px;
+	font-size: 1.2rem!important;
+	font-weight: 600;
+	text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+
+}
+.footer-div {
+	margin: 30px 0;
+}
+
+.footerSection li a{
+	font-size: 0.9rem;
+	line-height: 1.6;
+	font-weight: 400;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+
+#navbar{
+	border-color: transparent;
+}
+
+#navbar .navbar-brand{
+	font-size: 30px;
+}
+
+
+.dropdown-menu{
+	display: none;
+	position: absolute;
+	
+	box-shadow: 2px 8px 16px 0px rgba(0,0,0,0.3);
+	z-index: 1;
+}
+
+.dropdown-menu a{
+	color: #000 !important;
+	font-size: 16px !important;
+}
+
+.dropdown:hover .dropdown-menu{
+	display: block;
+	transition: all 0.5s ease-in-out ;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover{
+	background-color: #c9c7c7;
+}
+
+.big-text{
+	font-size: 52px;
+	margin: 20px 0;
+	color: #2b6acf;
+}
+
+.extradiv .TesterBtn , .link .ManagerBtn{
+	margin: 30px 10px;
+	width: 300px;
+	padding: 10px;
+	border: 1px solid #2ecc71 ;
+	color:white;
+	border-radius: 24px;
+	background: transparent;
+}
+
+.TesterBtn:hover ,.ManagerBtn:hover{
+	background: #2ecc71;
+	border: none;
+	color: white;
+	box-shadow: 5px 5px 10px #999;
+	transition: 0.3s;
+    
+}
+
+#testerImg{
+	width: 200;
+	height: 200;
+}
+
+.extradiv,.link{
+	border:medium none;
+	border-radius: 3px;
+	padding: 50px;
+	transition:0.3s;
+	text-align: center;
+}
+
+.link .ManagerBtn ,.extradiv .TesterBtn{color: black;}
+
+
+.extradiv:hover , .link:hover{
+	box-shadow: 0 0 20px 0  rgba(0,0,0,0.3);
+	transform: translateY(-5px);
+}
+
+
+::placeholder{
+	font-size: 0.85rem;
+} 
+
+#btnNew{
+	color: black;
+	border: 1px solid #2ecc71;
+	border-radius: 100px 0px 0px 100px;
+}
+#btnUpdate {
+	color: black;
+	border: 1px solid #2ecc71;
+	border-radius: 0px 100px 100px 0px;
+}
+
+#btnNew:hover , #btnUpdate:hover{
+	background-color: #2ecc71;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+	transition: 0.3s;
+}
+
+#btnNew:focus ,  #btnUpdate:focus{
+	background-color: #2ecc71;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+
+}
+
+.newPatient h1 ,.oldPatient h1{
+	color:white;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight:500;
+	border-bottom: 1px solid white;
+}
+
+@media(max-width: 768px){
+	.nav-item{
+		text-align: center;
+	}
+
+}
+
+
+.oldPatient {
+	padding : 14px 10px;
+	display: none;
+	width: 500px; 
+	margin:20px auto;
+}
+
+.newPatient{
+	width: 500px; 
+	border:0;
+	display: block;
+	margin:20px auto;
+	padding : 14px 10px;
+	transition:0.25s;
+}
+
+.oldPatient button,.newPatient button{
+	border:0;
+	background: none;
+	margin:30px 10px;
+	border:2px solid #2ecc71;
+	padding : 14px 40px;
+	outline:none;
+	color:black;
+	border-radius:24px;
+	transition:0.25s;
+	margin-left: auto;
+	margin-right: right;
+}
+
+ .oldPatient button:hover,.newPatient button:hover{
+	background: #2ecc71;
+	cursor: pointer;
+}
+
+.oldPatient label ,.newPatient label{
+	color:black;
+	display: block;
+	font-size: 20px;
+}
+.newPatient #PName{
+	border:2px solid #3498db;
+}
+
+.newPatient input , .oldPatient input{
+	border:0;
+	background: none;
+	display: block;
+	margin:20px auto;
+	text-align: center;
+	border:2px solid #3498db;
+	padding : 14px 10px;
+	outline:none;
+	color:black;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+.newPatient input:focus ,.oldPatient input:focus{
+	background: none;
+	border-color:#3498db;
+}
+
+.newPatient .btnAdd,.oldPatient .btnAdd{
+	border:0;
+	background: none;
+	margin:30px 10px;
+	border:2px solid #2ecc71;
+	padding : 14px 40px;
+	outline:none;
+	color:black;
+	border-radius:24px;
+	transition:0.25s;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.newPatient .btnAdd:hover,.oldPatient .btnAdd:hover{
+	background: #2ecc71;
+	cursor: pointer;
+}
+
+#enterId ,#enterResult{
+	border:medium none;
+	border-radius: 3px;
+	padding: 50px;
+	transition:0.3s;
+	text-align: center; 
+}
+
+#enterId input,#enterResult input{
+	border:0;
+	margin:20px auto;
+	text-align: center;
+	border:2px solid #3498db;
+	padding : 14px 10px;
+	background: none;
+	color:black;
+	width:200px;
+	height:50px;
+	outline:none;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+
+#enterId input:focus, #enterResult input:focus{
+	width: 280px;
+	border-color:#3498db;
+}
+
+#enterId h1,#enterResult h1{
+	border-bottom :1px white solid;
+}
+
+#enterId button ,#enterResult button{
+	border:0;
+	width: 150px;
+	height: 50px;
+	background: none;
+	margin:30px 10px;
+	border:2px solid #2ecc71;
+	padding : 14px 40px;
+	outline:none;
+	color:black;
+	border-radius:24px;
+	transition:0.25s;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#enterId button:hover,#enterResult button:hover{
+	background: #2ecc71;
+	cursor: pointer;
+}
+
+#enterId:hover ,#enterResult:hover{
+	box-shadow: 0 0 20px 0  rgba(0,0,0,0.3);
+	transform: translateY(-5px);
+}
+
+.close{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.close input[type="button"]{
+	border:0;
+	width: 250px;
+	background: none;
+	margin:30px 10px;
+	border:2px solid #2ecc71;
+	padding : 14px 40px;
+	color:black;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+.close input[type="button"]:hover{
+	background:#2ecc71;
+	box-shadow: 0 0 20px 0  rgba(0,0,0,0.3);
+	transform: translateY(-5px);
+}
+
+#retriveList, #updateList{display: none;}
+
+.error {
+    color: red;
+    font-size: 70%;
+}
