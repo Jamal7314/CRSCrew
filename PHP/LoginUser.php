@@ -22,6 +22,8 @@
 	$AddUserQuery = "INSERT INTO users values('Manager','123','James', '0109452818',  'Manager',null,null)";
 	$conn->query($AddUserQuery);
 
+        $_SESSION['findUser']=$UserName;
+
 	$GetUserQuery = "SELECT * from users";
 	$result = $conn->query($GetUserQuery);
 	if($result->num_rows <= 0){
@@ -59,6 +61,10 @@
 			}
 		}
 	}
+
+if (isset($_SESSION['findUser'])) {
+    echo "session is set";
+  }
 
 	$conn->close();
 ?>
