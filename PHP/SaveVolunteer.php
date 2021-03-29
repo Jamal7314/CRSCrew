@@ -4,9 +4,11 @@ $UserName = $_POST['username'];
 $Password = $_POST['password'];
 $FullName = $_POST['realName'];
 $Phone = $_POST['phoneNum'];
-$Position = $_POST['pos'];
-$DateJoined = date("Y/m/d");
-$UserType = "Staff";
+$ICnumber=$_POST['ICnumber'];
+$DOB=$_POST['DOB'];
+$Gender=$_POST['Gender'];
+
+$UserType = "Volunteer";
 
 $SERVERNAME = "localhost";
 $dbUsername = "root";
@@ -20,30 +22,19 @@ if($conn->connect_error){
 }
 $conn->select_db("CRS");
 
+
 $Checkwhitespace = "/\s/";
 $CheckFullName = "/\A\s*\z/";
 if(preg_match($Checkwhitespace,$UserName) || preg_match($Checkwhitespace,$Password)){
 	echo "<script>
-	alert('User Name or Password cannot be empty!');
-	window.location.href='../RegisterStaff.php';
+	alert('User Name or Password cannot have any white space');
+	window.location.href='../SignUp.html';
 	</script>";
 }
 else if(preg_match($CheckFullName,$FullName)){
 	echo "<script>
-	alert('Full Name cannot be empty!');
-	window.location.href='../RegisterStaff.php';
-	</script>";
-}
-else if(preg_match($CheckPhone,$Phone)){
-	echo "<script>
-	alert('Phone Number cannot be empty!');
-	window.location.href='../RegisterStaff.php';
-	</script>";
-}
-else if(preg_match($CheckPosition,$Position)){
-	echo "<script>
-	alert('Full Name cannot be empty!');
-	window.location.href='../RegisterStaff.php';
+	alert('Full Name cannot be white space');
+	window.location.href='../SignUp.html';
 	</script>";
 }
 else{
@@ -52,15 +43,15 @@ else{
 	if($result->num_rows != 0){
 		echo "<script>
 		alert('The user name is duplicate , please select another user name');
-		window.location.href='../RegisterStaff.php';
+		window.location.href='../SignUp.html';
 		</script>";
 	}
 	else{
-		$AddUserQuery = "INSERT INTO users values('$UserName','$Password','$FullName','$Phone','$UserType','$Position', '$DateJoined', null,null,null)";
+		$AddUserQuery = "INSERT INTO users values('$UserName','$Password','$FullName','$Phone','$UserType',null, null,'$ICnumber' , '$DOB','$Gender' )";
 		$conn->query($AddUserQuery);
 		echo "<script>
-			alert('New Staff Registered Successfully');
-			window.location.href='../RegisterStaff.php';
+			alert('New Volunteer Registered Successfully');
+			window.location.href='../login.html';
 			</script>";
 	}
 }
