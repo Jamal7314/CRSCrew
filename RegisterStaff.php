@@ -56,13 +56,7 @@
 						</div>
 						<div class="form-group">
 							<label for="position">Crisis Type:</label>
-					<select name="pos" id="position" required class="form-control">
-						<option value="" >Select Position</option>
-						<option value="Admin" >Admin</option>
-						<option value="Manager" >Manager</option>
-						
-						
-				</select>
+					                <input class="form-control" type="text" name="pos" id="position" placeholder=" Position" >
 						</div>
 						<div class="button">
 							<input type="submit" name="submit" value="Submit">
